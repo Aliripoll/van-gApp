@@ -1,6 +1,6 @@
 # van gApp  
-####Proyecto en construcción. 👩🏼‍💻
+#### Proyecto en construcción. 👩🏼‍💻
 
-###Boceto:
+### Boceto:
 
    ![700143678ddfb9dae5534bf3dca2e7ab](./src/images/vangApp.jpg) 
