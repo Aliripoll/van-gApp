@@ -9,9 +9,10 @@ function PaintingList({ dataPainting }) {
     })
     return (
         <>
-        <ul>
-            {paintingList}
-        </ul>
+            <ul className="cards">
+                {paintingList}
+            </ul>
+          
         </>
     )
 }

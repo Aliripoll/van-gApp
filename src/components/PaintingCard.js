@@ -1,19 +1,24 @@
 import React from "react";
-import "../styles/PaintingCard.css";
 
 
-function PaintingCard( {painting}) {
+
+function PaintingCard( {painting }) {
+    return (
     <li className="card">
-        <article>
+        <article className="card_article">
             <img
-            src={painting.image} />
-            <h3></h3>
-            <p></p>
-            <p></p>
-            <p></p>
+            src={painting.image}
+            className="img_card"
+            />
+            <div className="text_container">
+            <p>{painting.date}</p>
+            <h4>{painting.title}</h4>
+            
+            
+            </div>
         </article>
-      
     </li>
-}
+    );
+};
 
 export { PaintingCard };

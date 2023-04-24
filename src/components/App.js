@@ -1,11 +1,13 @@
 
-import '../App.css';
 import callToApi from "../services/Api";
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { PaintingList } from './PaintingList';
+import "../styles/App.css";
+
 
 const paintingsIds = [
+  //PINTURAS
   436533,
   459123,
   436532,
@@ -13,7 +15,23 @@ const paintingsIds = [
   437984,
   459193,
   436528,
-  436535
+  436535,
+  336327,
+  436530,
+  436527,
+  436531,
+  436524,
+  436526,
+  436536,
+  438722,
+  436525,
+  437998,
+  436534,
+  437980,
+  //DIBUJOS
+  335537,
+  335538,
+
 ];
 
 function App() {
