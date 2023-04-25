@@ -32,11 +32,19 @@ const paintingsIds = [
   //DIBUJOS
   335537,
   335538,
+  849055,
+  336318,
+  335536,
+  849054,
+  849052,
+  849056,
 
 ];
 
 function App() {
   const [dataPainting, setDataPainting] = useState([]);
+  const [inputTechnique, setInputTechnique] = useState("all");
+  const [filteredDataPainting, setFilteredDataPainting] = useState([]);
 
   useEffect(() => {
     let promises = paintingsIds.map(id => callToApi(id));
@@ -48,16 +56,42 @@ function App() {
         });
 
         setDataPainting(data);
+        setFilteredDataPainting(data);
     })
   }, []);
   /* const list = dataPainting.map((elem) =>
       <li>{elem.title}</li>
       );
  */
+
+  //EVENT FUNCTIONS//
+
+  const handleTechniqueInput = (value) => {
+  
+    setInputTechnique(value);
+    const filteredDataPaintings = dataPainting
+    .filter((element) => {
+      if(value === "all") {
+        return element;
+      } else if(element.technique === value){
+        return element; 
+      }
+     
+    });
+    setFilteredDataPainting(filteredDataPaintings);
+  
+
+    //Filtrar filteredDataPainting con el "value" y luego hacer un setFilteredDataPainting para que solo pinte lo seleccionado en el filtro
+  }
+
+
+
+  
+
   return (
     <>
-    <Header />
-    <PaintingList dataPainting={dataPainting}/>
+    <Header inputTechnique={inputTechnique} handleTechniqueInput={handleTechniqueInput}/>
+    <PaintingList dataPainting={filteredDataPainting}/>
     </>
   );
 }
