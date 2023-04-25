@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { PaintingList } from './PaintingList';
 import "../styles/App.css";
+import { Header } from "./Header";
 
 
 const paintingsIds = [
@@ -54,7 +55,10 @@ function App() {
       );
  */
   return (
+    <>
+    <Header />
     <PaintingList dataPainting={dataPainting}/>
+    </>
   );
 }
 

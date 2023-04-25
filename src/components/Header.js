@@ -1,13 +1,17 @@
 import React from "react";
-import "../styles/Header.css";
-import {Link, Route, Routes} from 'react-router-dom';
+import { FilterByTechnique } from "./FilterByTechnique";
+
+
 
 
 function Header() {
     return (
-        <nav className="header_nav">
-        <div className="header_name">Vincent van Gogh</div>  
-        </nav>       
+        <header className="header">
+            <div className="header__name">Vincent van Gogh</div>  
+            <form className="header__form">
+                <FilterByTechnique />
+            </form>
+        </header>       
         
     );
 }
