@@ -17,7 +17,8 @@ const callToApi = (paintingId) => {
             title: data.title,
             date: data.objectEndDate,
             techniqueOrigin: data.medium,
-            technique: finalTechnique
+            technique: finalTechnique,
+            dimensions: data.dimensions
         }        
       });
   };

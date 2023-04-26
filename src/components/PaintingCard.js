@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 
 function PaintingCard( {painting }) {
     return (
     <li className="card">
+      <Link to={`painting/${painting.id}`}>
         <article className="card_article">
             <img
             src={painting.image}
@@ -17,6 +19,7 @@ function PaintingCard( {painting }) {
             
             </div>
         </article>
+      </Link>
     </li>
     );
 };
