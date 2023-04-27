@@ -1,0 +1,89 @@
+[
+    {
+    "id": 1,
+    "image": "./img/StarryNight.jpg",
+    "title": "The Starry Night",
+    "Original Title": "La nuit étoilée",
+    "date": "1889",
+    "techniqueOrigin": "Oil on canvas",
+    "dimensions": "73,7 x 92,1 cm",
+    "style": "Post-Impressionism"
+   },
+   
+   {
+    "id": 2,
+    "image": "./img/cafe.jpg",
+    "title": "Terrace of a café at night (Place du Forum)",
+    "Original Title": "Caféterras bij nacht (Place du Forum)",
+    "date": "1888",
+    "techniqueOrigin": "Oil on canvas",
+    "dimensions": " 80,7 x 65,3 cm",
+    "style": "Post-Impressionism"
+   },
+
+   {
+    "id": 3,
+    "image": "img/habitacion.jpg",
+    "title": "Van Gogh's Bedroom in Arles",
+    "Original Title": "La chambre de Van Gogh à Arles",
+    "date": "1889",
+    "techniqueOrigin": "Oil on canvas",
+    "dimensions": "72 x 90 cm",
+    "style": "Post-Impressionism"
+   },
+
+   {
+    "id": 4,
+    "image": "img/selfportrait.jpg",
+    "title": "Self-Portrait",
+    "Original Title": "Portrait de l'artiste",
+    "date": "1889",
+    "techniqueOrigin": "Oil on canvas",
+    "dimensions": "65 x 54,2 cm",
+    "style": "Post-Impressionism"
+   },
+
+   {
+    "id": 5,
+    "image": "img/eternidad.jpeg",
+    "title": "Sorrowing old man ('At Eternity's Gate')",
+    "Original Title": "Treurende oude man ('At Eternity's Gate')",
+    "date": "1890",
+    "techniqueOrigin": "Oil on canvas",
+    "dimensions": "81,8 x 65,5 cm",
+    "style": "Post-Impressionism"
+   },
+
+   {
+    "id": 6,
+    "image": "img/florero1.jpeg",
+    "title": "Vase with Daisies and Poppies",
+    "Original Title": "-",
+    "date": "1890",
+    "techniqueOrigin": "Oil on canvas",
+    "dimensions": "100 x 80 cm",
+    "style": "Post-Impressionism"
+   },
+
+   {
+    "id": 7,
+    "image": "img/sower.jpg",
+    "title": "The Sower",
+    "Original Title": "De zaaier",
+    "date": "1890",
+    "techniqueOrigin": "Oil on canvas",
+    "dimensions": "64,2 x 80,3 cm",
+    "style": "Post-Impressionism"
+   },
+
+   {
+    "id": 8,
+    "image": "img/headwom.jpg",
+    "title": "Head of a woman",
+    "Original Title": "Kop van een vrouw",
+    "date": "1890",
+    "techniqueOrigin": "Oil on canvas",
+    "dimensions": "37,9 x 28,4 cm",
+    "style": "Post-Impressionism"
+   }
+]

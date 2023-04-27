@@ -1,6 +1,7 @@
 
 import React from "react";
 import callToApi from "../services/Api";
+import callToLocalApi from "../services/ApiLocal";
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { PaintingList } from './PaintingList';
@@ -50,7 +51,8 @@ function App() {
   const [filteredDataPainting, setFilteredDataPainting] = useState([]);
 
   useEffect(() => {
-    let promises = paintingsIds.map(id => callToApi(id));
+    let promises = paintingsIds.map(id => callToApi(id)); 
+    promises.push(callToLocalApi());
     Promise.all(promises).then(responses => {
         let data = [];
 
