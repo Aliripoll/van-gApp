@@ -16,7 +16,7 @@ function FilterByTechnique ({inputTechnique, handleTechniqueInput}) {
                 </label>
                 <label>
                     <input type="radio" id="paint" value="paint" checked={inputTechnique === "paint"} onChange={handleInput} ></input>
-                    <span>Pintura al oleo</span> 
+                    <span>Pintura al óleo</span> 
                 </label>
                 <label>
                     <input type="radio" id="draw" value="draw" checked={inputTechnique === "draw"} onChange={handleInput} ></input>

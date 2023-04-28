@@ -52,7 +52,7 @@ function App() {
 
   useEffect(() => {
     let promises = paintingsIds.map(id => callToApi(id)); 
-    promises.push(callToLocalApi());
+    promises.unshift(callToLocalApi());
     Promise.all(promises).then(responses => {
         let data = [];
 
