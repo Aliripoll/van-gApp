@@ -12,12 +12,14 @@ function Header({inputTechnique, handleTechniqueInput}) {
 
     return (
         <header className="header">
-            <div className="header__name">Vincent van Gogh</div>  
+            <p className="header__name">Vincent van Gogh</p>
+              
             <form className="header__form" onSubmit={handleSubmit}>
                 <FilterByTechnique 
                     inputTechnique={inputTechnique} 
                     handleTechniqueInput={handleTechniqueInput}
                 />
+                
             </form>
         </header>       
         

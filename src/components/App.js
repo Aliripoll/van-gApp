@@ -45,10 +45,16 @@ const paintingsIds = [
 
 ];
 
+//PAGINACIÓN
+const initial_page= 0;
+
 function App() {
   const [dataPainting, setDataPainting] = useState([]);
   const [inputTechnique, setInputTechnique] = useState("all");
   const [filteredDataPainting, setFilteredDataPainting] = useState([]);
+
+  //PAGINACIÓN
+  const [page, setPage] = useState(initial_page);
 
   useEffect(() => {
     let promises = paintingsIds.map(id => callToApi(id)); 
@@ -64,10 +70,13 @@ function App() {
         setFilteredDataPainting(data);
     })
   }, []);
-  /* const list = dataPainting.map((elem) =>
-      <li>{elem.title}</li>
-      );
- */
+
+  useEffect(function (){
+    
+
+  }, [page])
+
+  
 
   //EVENT FUNCTIONS//
 
@@ -100,7 +109,9 @@ function App() {
   );
 console.log(paintingFound);
 
-  
+  const handleNextPage = () => {
+
+  };
 
   return (
     <>
@@ -122,7 +133,7 @@ console.log(paintingFound);
       />
 
     </Routes>
-
+        <button onClick={handleNextPage}>Next page</button>
     </>
   );
 }
