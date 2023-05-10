@@ -36,6 +36,7 @@ font-family: 'Water Brush', cursive; */
     font-size: 19px;
     font-family: 'Cairo Play', sans-serif;
 }
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -43,17 +44,21 @@ font-family: 'Water Brush', cursive; */
     padding: 5px 130px 50px 130px;
     justify-content: center;
     list-style: none;  
+    
+}
+.card_link {
+    text-decoration: none;
 }
 
 .card_article {
     display: flex;
     flex-direction: column;
     border: rgb(255, 246, 234) 8px groove;
-    border-radius: 2px;
     width: 200px;
     height: 320px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    
 }
 
 .img_card {
@@ -69,28 +74,51 @@ font-family: 'Water Brush', cursive; */
     display:inline-block;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
+
 
 .card_detail {
     display: flex;
-    display: flex;
-    flex-direction: column;
     text-align: center;
     object-fit: contain;
     border: 3px solid rgb(72, 94, 72);
     font-size: 17px;
-    width: 300px;
-    height: 420px;
+    width: 700px;
+    height: 400px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 50px;
+    border-radius: 8px;
     
 }
 .img_card-detail {
-    width: 300px;
-    height: 270px;
+    width: 380px;
+    height: 400px;
     object-fit: cover; 
     
 }
-.card_link {
+.detail_link {
+    margin-top: 20px;
     text-decoration: none;
+    font-size: 40px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_detail {
+    margin: 10px 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    display:inline-block;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+}
+.detail_title {
+    font-size: 22px;
+    padding-bottom: 10px;
+    font-family: 'Kiwi Maru', serif;
 }

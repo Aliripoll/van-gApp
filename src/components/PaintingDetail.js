@@ -5,26 +5,31 @@ import "../styles/App.css";
 
 
 function PaintingDetail( {dataPaintingDetail }) {
-    console.log(dataPaintingDetail)
+    console.log(dataPaintingDetail);
     return (
         <>
-            <Link className="link" to="/">
-                {" "}
-                Volver{" "}
-                </Link>
+            
             <article className="card_detail">
-             
             
                 <img
                 src={dataPaintingDetail.image}
                 className="img_card-detail"
                 />
-                <div className="text_container">
-                    <p>{dataPaintingDetail.date}</p>
-                    <h4>{dataPaintingDetail.title}</h4>
-                    <p>{dataPaintingDetail.technique}</p>
+                <div className="text_detail">
+                    <h4 className="detail_title">{dataPaintingDetail.title}</h4>
+                    <p>Original title: {dataPaintingDetail.originalTitle}</p>
+                    <p>Date: {dataPaintingDetail.date}</p>
+                    <p>Technique: {dataPaintingDetail.techniqueOrigin}</p>
+                    <p>Style: {dataPaintingDetail.style}</p>
+                    <p>Dimensions: {dataPaintingDetail.dimensions}</p>
                 </div>
+
             </article>
+
+            <Link className="detail_link" to="/">
+                {" "}
+                ⇐{" "}
+                </Link>
            
         </>
     );

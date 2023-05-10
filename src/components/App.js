@@ -9,6 +9,7 @@ import "../styles/App.css";
 import { Header } from "./Header";
 import { PaintingDetail } from "./PaintingDetail";
 import {Link, Route, Routes, useLocation, matchPath} from 'react-router-dom';
+import { Filters } from "./Filters";
 
 
 const paintingsIds = [
@@ -97,20 +98,25 @@ function App() {
 
   const paintingFound = dataPainting.find(
     (painting) => painting.id === parseInt(paintingId)
-  );
-console.log(paintingFound);
-
-  
+  );  
 
   return (
     <>
    
-    <Header inputTechnique={inputTechnique} handleTechniqueInput={handleTechniqueInput}/>
+    <Header/>
     <Routes>
+
       <Route 
         path="/"
         element={
+          <>
+          <Filters
+          inputTechnique={inputTechnique} handleTechniqueInput={handleTechniqueInput}
+          />
+          
           <PaintingList dataPainting={filteredDataPainting}/>
+          </>
+          
         }
       />
     
