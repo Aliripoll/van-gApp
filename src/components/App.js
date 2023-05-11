@@ -8,7 +8,7 @@ import { PaintingList } from './PaintingList';
 import "../styles/App.css";
 import { Header } from "./Header";
 import { PaintingDetail } from "./PaintingDetail";
-import {Link, Route, Routes, useLocation, matchPath} from 'react-router-dom';
+import {Route, Routes, useLocation, matchPath} from 'react-router-dom';
 import { Filters } from "./Filters";
 
 
