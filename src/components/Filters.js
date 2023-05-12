@@ -1,5 +1,6 @@
 import React from "react";
 import { FilterByTechnique } from "./FilterByTechnique";
+import { FilterByText } from "./FilterByText";
 
 
 
@@ -16,6 +17,7 @@ function Filters( {inputTechnique, handleTechniqueInput} ) {
                 inputTechnique={inputTechnique} 
                 handleTechniqueInput={handleTechniqueInput}
             />
+            <FilterByText />
         </form>
     )
 };
