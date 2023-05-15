@@ -51,6 +51,8 @@ function App() {
   const [inputTechnique, setInputTechnique] = useState("all");
   const [filteredDataPainting, setFilteredDataPainting] = useState([]);
 
+  const [filterByText, setFilterByText] = useState("");
+
   useEffect(() => {
     let promises = paintingsIds.map(id => callToApi(id)); 
     promises.unshift(callToLocalApi());
@@ -82,12 +84,26 @@ function App() {
       } else if(element.technique === value){
         return element; 
       }
-     
+
+
     });
     setFilteredDataPainting(filteredDataPaintings);
-  
-
     //Filtrar filteredDataPainting con el "value" y luego hacer un setFilteredDataPainting para que solo pinte lo seleccionado en el filtro
+  }
+
+  const handleTextInput = (value) => {
+    setFilterByText(value)
+   const filteredDataPaintingText = dataPainting
+      .filter((element) => { 
+        if(value === "") {
+          return element;
+        } else {
+          return element.title.toLowerCase().includes(filterByText.toLowerCase())
+        }
+        
+      });
+    console.log(filteredDataPaintingText);
+    setFilteredDataPainting(filteredDataPaintingText)
   }
 
   const { pathname } = useLocation();
@@ -100,6 +116,15 @@ function App() {
     (painting) => painting.id === parseInt(paintingId)
   );  
 
+
+  const handleFilterByText = (value) => {
+    setFilterByText(value);
+  };
+
+  //RENDER FUNCTION
+
+  
+
   return (
     <>
    
@@ -111,7 +136,10 @@ function App() {
         element={
           <>
           <Filters
-          inputTechnique={inputTechnique} handleTechniqueInput={handleTechniqueInput}
+          inputTechnique={inputTechnique} 
+          handleTechniqueInput={handleTechniqueInput}
+          filterByText={filterByText}
+          handleTextInput={handleTextInput}
           />
           
           <PaintingList dataPainting={filteredDataPainting}/>

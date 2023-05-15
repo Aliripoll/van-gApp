@@ -4,7 +4,7 @@ import { FilterByText } from "./FilterByText";
 
 
 
-function Filters( {inputTechnique, handleTechniqueInput} ) {
+function Filters( {inputTechnique, handleTechniqueInput, filterByText ,handleTextInput} ) {
 
     //EVENT FUNCTIONS
     const handleSubmit = (ev) => {
@@ -16,8 +16,12 @@ function Filters( {inputTechnique, handleTechniqueInput} ) {
             <FilterByTechnique 
                 inputTechnique={inputTechnique} 
                 handleTechniqueInput={handleTechniqueInput}
+                
             />
-            <FilterByText />
+            <FilterByText 
+                filterByText={filterByText} 
+                handleTextInput={handleTextInput}
+            />
         </form>
     )
 };
