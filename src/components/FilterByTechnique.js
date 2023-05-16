@@ -7,19 +7,19 @@ function FilterByTechnique ({inputTechnique, handleTechniqueInput}) {
 
     return (
         <div className="form_div">
-            <p className="form_title">Técnica:</p>
+            <p className="form_title">Technique:</p>
             
                 <label>
                 <input type="radio" id="all" value="all" checked={inputTechnique === "all"} onChange={handleInput} ></input>
-                    <span className="form_technique">Todos</span> 
+                    <span className="form_technique">All</span> 
                 </label>
                 <label>
                     <input type="radio" id="paint" value="paint" checked={inputTechnique === "paint"} onChange={handleInput} ></input>
-                    <span className="form_technique">Pintura al óleo</span> 
+                    <span className="form_technique">Oil on canvas</span> 
                 </label>
                 <label>
                     <input type="radio" id="draw" value="draw" checked={inputTechnique === "draw"} onChange={handleInput} ></input>
-                    <span className="form_technique">Dibujo</span> 
+                    <span className="form_technique">Draw</span> 
                 </label>
             </div>
     )

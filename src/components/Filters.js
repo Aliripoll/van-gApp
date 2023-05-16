@@ -14,11 +14,13 @@ function Filters( {inputTechnique, handleTechniqueInput, filterByText ,handleTex
     return (
         <form className="header__form" onSubmit={handleSubmit}>
             <FilterByTechnique 
+            
                 inputTechnique={inputTechnique} 
                 handleTechniqueInput={handleTechniqueInput}
                 
             />
             <FilterByText 
+            
                 filterByText={filterByText} 
                 handleTextInput={handleTextInput}
             />

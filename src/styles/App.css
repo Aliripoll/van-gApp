@@ -6,42 +6,63 @@ font-family: 'Pacifico', cursive;
 font-family: 'Water Brush', cursive; */
 
 
-
-.header {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    gap: 20px;  
-}
 .header__name {
-    font-size: 50px;
-    font-family: 'Water Brush', cursive; 
+    font-size: 40px;
+    font-family: 'Water Brush', cursive; display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+
+.header__form{
+    display:flex;
+    flex-direction: column;
+    margin-left: 30px;
+    /* OJO A ESTE MARGIN! */
+
 }
 .form_div {
     margin-top: 10px;
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 10px;
+   gap: 5px;
 }
 
 .form_title {
-    font-size: 22px;
     font-family:'Love Ya Like A Sister', cursive;
     text-decoration: underline solid palevioletred;
 }
 .form_technique {
-    font-size: 19px;
+    font-size: 17px;
     font-family: 'Cairo Play', sans-serif;
+}
+
+.form_secondDiv {
+    display: flex;
+    margin: 10px 0 10px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form_input {
+    font-size: 17px;
+    font-family:'Love Ya Like A Sister', cursive;
+    text-decoration: underline solid palevioletred;
+}
+.form_inputBox {
+    font-size: 17px;
+    border-radius: 5px;
+    width: 200px;
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
-    padding: 5px 130px 50px 130px;
+    padding: 5px 130px 50px 200px;
     justify-content: center;
     list-style: none;  
     
@@ -121,4 +142,50 @@ font-family: 'Water Brush', cursive; */
     font-size: 22px;
     padding-bottom: 10px;
     font-family: 'Kiwi Maru', serif;
+}
+
+@media (min-width: 1200px) {
+    .header__name {
+        font-size: 55px;
+        font-family: 'Water Brush', cursive; display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 55px;
+        gap: 20px;  
+    }
+    .header__form{
+        display:flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 50px;
+    }
+    .form_div {
+       margin-top: 15px;
+       gap: 10px;
+    }
+
+    .form_secondDiv {
+      margin-top: 25px;
+    }
+    .form_title {
+        font-size: 22px;
+    }
+    .form_input {
+        font-size: 22px;
+    }
+    .form_inputBox {
+        font-size: 20px;
+        border-radius: 5px;
+        border-style:ridge;
+        width: 320px;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        padding: 15px 130px 50px 130px;
+        justify-content: center;
+        list-style: none;  
+        
+    }
 }
