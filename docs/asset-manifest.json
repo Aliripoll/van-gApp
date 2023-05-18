@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/van-gApp/static/css/main.133228a1.css",
-    "main.js": "/van-gApp/static/js/main.2fa1eb21.js",
+    "main.css": "/van-gApp/static/css/main.a42d2393.css",
+    "main.js": "/van-gApp/static/js/main.9d90c7e3.js",
     "index.html": "/van-gApp/index.html",
-    "main.133228a1.css.map": "/van-gApp/static/css/main.133228a1.css.map",
-    "main.2fa1eb21.js.map": "/van-gApp/static/js/main.2fa1eb21.js.map"
+    "main.a42d2393.css.map": "/van-gApp/static/css/main.a42d2393.css.map",
+    "main.9d90c7e3.js.map": "/van-gApp/static/js/main.9d90c7e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.133228a1.css",
-    "static/js/main.2fa1eb21.js"
+    "static/css/main.a42d2393.css",
+    "static/js/main.9d90c7e3.js"
   ]
 }
