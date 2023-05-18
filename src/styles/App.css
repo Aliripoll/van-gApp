@@ -57,6 +57,14 @@ font-family: 'Water Brush', cursive; */
     border-radius: 5px;
     width: 200px;
 }
+.error {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: rebeccapurple;
+    font-family: 'Kiwi Maru', serif;
+  }
 
 .cards {
     display: flex;
