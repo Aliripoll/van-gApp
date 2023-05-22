@@ -197,3 +197,15 @@ font-family: 'Water Brush', cursive; */
         
     }
 }
+
+
+.loading_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading_text {
+    font-size: 22px;
+    color: rebeccapurple;
+    font-family: 'Kiwi Maru', serif;
+}

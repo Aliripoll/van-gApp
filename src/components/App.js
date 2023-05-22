@@ -10,6 +10,7 @@ import { Header } from "./Header";
 import { PaintingDetail } from "./PaintingDetail";
 import {Route, Routes, useLocation, matchPath} from 'react-router-dom';
 import { Filters } from "./Filters";
+import { TodoLoading } from "./TodoLoading";
 
 
 const paintingsIds = [
@@ -53,6 +54,8 @@ function App() {
 
   const [filterByText, setFilterByText] = useState("");
 
+  const [loading, setLoading] = useState(true)
+
   useEffect(() => {
     let promises = paintingsIds.map(id => callToApi(id)); 
     promises.unshift(callToLocalApi());
@@ -65,7 +68,9 @@ function App() {
 
         setDataPainting(data);
         setFilteredDataPainting(data);
-    })
+        setLoading(false);
+    });
+    
   }, []);
   /* const list = dataPainting.map((elem) =>
       <li>{elem.title}</li>
@@ -141,8 +146,10 @@ function App() {
           filterByText={filterByText}
           handleTextInput={handleTextInput}
           />
-          
-          <PaintingList dataPainting={filteredDataPainting}/>
+
+          {!loading && <PaintingList dataPainting={filteredDataPainting}/>}
+         
+          {loading && <TodoLoading/>}
           </>
           
         }
