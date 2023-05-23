@@ -160,17 +160,17 @@ font-family: 'Water Brush', cursive; */
         justify-content: center;
         align-items: center;
         margin-top: 55px;
-        gap: 20px;  
+        gap: 15px;  
     }
     .header__form{
         display:flex;
         justify-content: center;
         flex-direction: row;
-        gap: 50px;
+        gap: 95px;
     }
     .form_div {
        margin-top: 15px;
-       gap: 10px;
+       gap: 15px;
     }
 
     .form_secondDiv {
@@ -180,13 +180,14 @@ font-family: 'Water Brush', cursive; */
         font-size: 22px;
     }
     .form_input {
-        font-size: 22px;
+        font-size: 21px;
     }
     .form_inputBox {
-        font-size: 20px;
+        margin-left: 10px;
+        font-size: 18px;
         border-radius: 5px;
         border-style:ridge;
-        width: 320px;
+        width: 280px;
     }
     .cards {
         display: flex;
